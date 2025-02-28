@@ -20,7 +20,7 @@
 
   /* Text Colors */
   --primary-text: #061738;
-  --secondary-color: #60cd12;
+  --secondary-color: #e4b23b;
   --light-color: #e2f6de;
   --dark-color: #03262c;
   --text-white: #fff;
@@ -145,7 +145,7 @@ button:hover {
 .main-btn {
   position: relative;
   color: var(--bg-white);
-  background: linear-gradient(to right, #0f7404, #5cb917);
+  background: linear-gradient(to right, #061738, #5580d6);
   z-index: 1;
   overflow: hidden;
   border: 0.2rem solid var(--bg-white);
@@ -209,7 +209,7 @@ section {
   /* top: 2rem; */
   /* left: 0; */
   /* z-index: 2; */
-  background-color: #03262c;
+  background-color: var(--primary-text);
 }
 
 .navbar-brand {
@@ -288,6 +288,7 @@ section {
 .banner_section .carousel-caption p {
   max-width: 40rem;
   margin-bottom: 2rem;
+  text-align: justify;
 }
 
 /* Feature section */
@@ -309,7 +310,7 @@ section {
 .feature_section .features-box .features-icon {
   height: 6.5rem;
   width: 6.5rem;
-  background-color: var(--light-color);
+  background-color: #dfbe73;
   margin: auto;
   border-radius: 50%;
   display: flex;
@@ -327,8 +328,8 @@ section {
 }
 
 .feature_section .features-box:hover {
-  background-color: #03262c;
-  border-color: #03262c;
+  background-color: var(--primary-text);
+  border-color: var(--secondary-color);
 }
 
 .feature_section .features-box:hover h3 {
@@ -336,7 +337,7 @@ section {
 }
 
 .feature_section .features-box:hover .features-icon-border {
-  border-color: #36970e;
+  border-color: var(--secondary-color);
 }
 
 /* About section */
@@ -410,4 +411,118 @@ section {
   background-attachment: fixed;
   padding-top: 100px;
   text-align: center;
+}
+
+
+/* Footer CSS */
+
+.footer_wrapper {
+  /* background: url('../images/footer-bg/footer_bg.png'); */
+  background-color: var(--primary-text);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-top: 15rem;
+  padding-bottom: 0rem;
+}
+
+.footer_wrapper h5 {
+  color: var(--text-white);
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.footer_wrapper ul li {
+  margin-bottom: .5rem;
+  list-style: none;
+}
+
+.footer_wrapper .company_details {
+  font-size: 1.4rem;
+}
+
+.footer_wrapper .contact-info li a {
+  color: var(--text-gray);
+  font-size: 1.6rem;
+}
+
+.footer_wrapper .link-widget li a,
+.footer_wrapper p {
+  color: var(--text-gray);
+  font-size: 1.6rem;
+  padding-left: 1.5rem;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.footer_wrapper .link-widget li a::before {
+  content: '\f105';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0.3rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.footer_wrapper .link-widget li a:hover {
+  margin-left: .625rem;
+  color: var(--secondary-color);
+}
+
+.footer_wrapper .social-network a {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: .5rem;
+  line-height: 3.2rem;
+  font-size: 1.5rem;
+  display: inline-block;
+  border: .125rem solid var(--text-gray);
+  color: var(--text-gray);
+  text-align: center;
+  border-radius: 100%;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.footer_wrapper .social-network a:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--text-white);
+  box-shadow: 0 .625rem .9375rem 0 rgb(0 0 0 / 10%);
+  transform: translateY(-0.1875rem);
+}
+
+.footer_wrapper .form-control {
+  font-size: 2rem;
+  color: white;
+}
+
+.footer_wrapper .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--secondary-color);
+}
+
+.footer_wrapper .copyright-section {
+  background-color: var(--primary-text);
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.footer_wrapper .copyright-section p {
+  margin-top: 0;
+  padding: 3rem 0;
+  line-height: 0;
+}
+
+.footer_wrapper .copyright-section a {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.footer_logo {
+  width: 120px;
 }
