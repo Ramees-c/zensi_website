@@ -213,7 +213,7 @@ section {
 }
 
 .navbar-brand {
-  width: 8.5rem;
+  width: 9rem;
   margin-top: -0.1rem;
 }
 
@@ -248,12 +248,12 @@ section {
   color: var(--secondary-color);
   display: block;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
 }
 
 .header .header_right .phone_no {
   color: var(--text-white);
-  font-size: 1.6rem;
+  font-size: 1.9rem;
 }
 
 /* Banner section */
