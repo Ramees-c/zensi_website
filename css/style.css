@@ -21,7 +21,7 @@
   /* Text Colors */
   --primary-text: #030e23;
   --secondary-color: #e8ae28;
-  --light-color: #e2f6de;
+  --light-color: #BFDFFF;
   --dark-color: #03262c;
   --text-white: #fff;
   --text-gray: #dee2e6;
@@ -351,6 +351,7 @@ section {
 .landing_about_section p {
   color: var(--primary-text);
   margin-bottom: 2rem;
+  text-align: justify;
 }
 
 /* product card design */
@@ -525,10 +526,90 @@ section {
   width: 120px;
 }
 
+/* Gallery CSS */
+
+.gallery_section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* ===========================
 About Page CSS
 ============================== */
 
 .about .about-details p {
   color: var(--primary-text);
+  text-align: justify;
+}
+
+/* ===========================
+Product Page CSS
+============================== */
+
+.product .product-details p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* ===========================
+Contact Page CSS
+============================== */
+.contact .contact-form {
+  background-color: var(--light-color);
+  padding: 5rem;
+  box-shadow: 0 0.2rem 1.5rem rgb(0 0 0 / 4%);
+}
+
+.contact .contact-form .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.contact .contact-form .form-control::placeholder {
+  color: var(--primary-text);
+}
+
+.contact .contact-form .form-control {
+  padding: 1rem 1.5rem;
+  border-radius: 0rem;
+  border: 0.1rem solid var(--secondary-color);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: var(--secondary-font);
+
+}
+
+
+
+.contact .contact-form textarea {
+  min-height: 15rem;
+}
+
+.contact .content-box .info-box li {
+  position: relative;
+  padding-left: 7rem;
+  padding-bottom: 3.5rem;
+  margin-bottom: 2.9rem;
+}
+
+.contact .content-box .info-box li i {
+  position: absolute;
+  left: 0;
+  top: 1.5rem;
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+  color: var(--primary-text);
+}
+
+.contact .content-box .info-box li p {
+  color: var(--primary-text);
+}
+
+.contact .content-box .info-box li a {
+  color: var(--dark-color);
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-family: var(--secondary-font);
 }
